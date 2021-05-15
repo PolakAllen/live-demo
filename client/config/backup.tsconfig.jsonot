@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "jsx": "react"
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}
