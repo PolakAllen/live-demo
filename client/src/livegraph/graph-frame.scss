@@ -1,0 +1,59 @@
+$accent1: #0063ab;
+$accent2: #f0b310;
+$good: 	#008000;
+$warn: 	#FF0000;
+
+.content {
+  padding: 1em;
+}
+.graphs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+.header {
+  display: flex;
+  font-size: 1em;
+  font-family: "sans serif";
+  justify-content: space-between;
+  align-items: center;
+}
+.graph {
+  flex-basis: 350px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  .graph-header {
+    font-size: 0.8em;
+    font-family: "sans serif";
+    height: 0;
+    z-index: 100;
+    max-width: 80%;
+    text-align: center;
+  }
+}
+svg {
+  min-width: 350px;
+  user-select: none;
+  .control-line-min,.control-line-max {
+    stroke-width: 0.5;
+    stroke: $warn;
+  }
+  .control-line-mean {
+    stroke-width: 0.5;
+    stroke: $good;
+  }
+  .data-line:nth-child(even) {
+    stroke: $accent2;
+  }
+  .data-line:nth-child(odd) {
+    stroke: $accent1;
+  }
+  .y-axis-backdrop {
+    fill: url(#FadeToWhite);
+  }
+}

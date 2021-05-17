@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Serves dummy data for the d3 demo",
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/server.js"
   },
   "dependencies": {
-    "poisson-process": "^1.0.0",
+    "random": "^3.0.6",
     "ws": "^7.4.5"
   }
 }
