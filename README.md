@@ -1,5 +1,8 @@
 This is a simple demo of some data visualizations for randomly generated mock data.
 
+![.gif of application running](live-demo.gif)
+
+
 Dev Notes
 ---------
 
